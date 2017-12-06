@@ -1,0 +1,39 @@
+{
+	"name": "tree-select",
+	"version": "0.5.0",
+	"description": "find the number of arguments that a function uses. arity.",
+	"main": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"test": "jest --coverage",
+		"build": "rollup -c"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/samouri/arity.git"
+	},
+	"keywords": [
+		"redux",
+		"selector"
+	],
+	"author": "samouri",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/samouri/tree-select/issues"
+	},
+	"homepage": "https://github.com/samouri/tree-select#readme",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"jest": "^21.2.1",
+		"rollup": "^0.52.1",
+		"rollup-plugin-babel": "^3.0.2",
+		"rollup-plugin-node-resolve": "^3.0.0",
+		"rollup-plugin-uglify": "^2.0.1"
+	},
+	"dependencies": {
+		"lodash-es": "^4.17.4"
+	}
+}
