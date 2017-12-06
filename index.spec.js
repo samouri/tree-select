@@ -2,7 +2,7 @@ const createSelector = require('./index');
 const _ = require('lodash');
 
 const warn = jest.fn();
-global.console = { ...console, warn };
+global.console = Object.assign({}, console, { warn });
 
 describe('index', () => {
 	const post1 = { id: 'id1', text: 'here is post 1', siteId: 'site1' };
@@ -46,7 +46,7 @@ describe('index', () => {
 		expect(selector).calledOnce;
 	});
 
-	test.only('should warn against complex arguments', () => {
+	test('should warn against complex arguments', () => {
 		console.warn.mockClear();
 		const state = { posts: {} };
 
